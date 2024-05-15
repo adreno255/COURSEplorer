@@ -1,0 +1,255 @@
+/* DO NOT MODIFY */
+@font-face{
+    src: url(Fonts/DupletRounded-Light-BF6606345906e60.otf);
+    font-family: Duplet-Light;
+}
+
+@font-face{
+    src: url(Fonts/DupletRounded-Regular-BF6606345a6aa3a.otf);
+    font-family: Duplet-Regular;
+}
+
+@font-face{
+    src: url(Fonts/FredokaOne-Regular.otf);
+    font-family: Fredoka;
+}
+
+@font-face{
+    src: url(Fonts/Nunito-Regular.ttf);
+    font-family: Nunito;
+}
+
+:root{
+    font-size: 20px;
+    font-family: Nunito;
+    --text-primary: black;
+    --text-secondary: #5d7b6f;
+    --text-tertiary: #a4c3a2;
+    --bg-primary: #eae7d6; 
+}
+
+body{
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 1.25vw;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: var(--text-tertiary);
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: hsla(156, 21%, 40%, 5);
+    border-radius: 10vw;
+    border: .3vw solid var(--text-tertiary);
+
+}
+
+.navbar{
+    width: 5rem;
+    height: 110vh;
+    position: fixed;
+    background-color: var(--text-tertiary);
+    border-radius: 0 6.5vw 6.5vw 0;
+    top: -5vh;
+}
+
+.navbar-nav{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 110vh;
+}
+
+.nav-item{
+    width: 40%;
+}
+
+.nav-logo{
+    margin-top: -55px;
+    margin-bottom: 50px;
+    padding: 0;
+    height: 50px;
+    width: 180px;
+    scale: 45%;
+}
+
+.nav-link{
+    fill: white;
+}
+
+.nav-link #home{
+    fill: black;
+}
+
+section{
+    margin-left: 7rem;
+    position: relative;
+    width: 100%;
+}
+
+/* CONTENT (MODIFIABLE) */
+
+.container1{
+    position: relative;
+    overflow: visible;
+    width: 55vw;
+    height: 110vh;
+    top: 10vh;
+    left: 33vw;
+}
+
+
+.image.circle1{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 10px;
+    top: -5%;
+    left: 5%;
+    float: right;
+    position: absolute;
+    shape-outside: circle();
+    margin: 5px;
+}
+
+
+.image.circle2{
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 3px;
+    top: 30%;
+    right: -10%;
+}
+
+.image.circle3{
+    position: absolute;
+    width: 33%;
+    height: 33%;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 3px;
+    bottom: 7%;
+    right: 4%;
+}
+
+.image.circle4{
+    position: absolute;
+    width: 43%;
+    height: 43%;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 3px;
+    bottom: -10%;
+    left: 10%;
+}
+
+.webname{
+    margin-top: 5%;
+    top: -23%;
+    left: -60%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scale: 75%;
+}
+
+.webname #course{
+    font-family: Fredoka;
+    font-size: 4.75rem;
+    color: var(--text-secondary);
+    display: inline;
+}
+
+.webname #plorer{
+    font-family: Duplet-Regular;
+    font-size: 4.5rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+    display: inline;
+}
+
+.webname h3{
+    font-family: Duplet-Regular;
+    font-size: 2.25rem;
+    color: var(--text-tertiary);
+    margin-top: -1%;
+    margin-left: 3%;
+}
+
+.desc.desc1{
+    font-size: 1rem;
+    color: var(--text-primary);
+    position: relative;
+    top: 20%;
+    left: -40%;
+    width: 45%;
+}
+
+.container2{
+    display: flex;
+    margin-top: 40vh;
+    margin-right: 15vw;
+    margin-left: 5vw;
+    margin-bottom: 10vh;
+    align-items: center;
+}
+
+.left{
+    width: 50%;
+    background-color: hsl(155, 25%, 38%, 0.17);
+    height: 100%;
+    text-align: center;
+    border-radius: 10% 0 0 10%;
+}
+
+.left p{
+    font-family: Duplet-Regular;
+    font-weight: bold;
+    color: var(--text-tertiary);
+    font-size: 2rem;
+    margin: 20px;
+    padding: 0;
+}
+
+
+.container2 #course{
+    display: inline;
+    font-family: Fredoka;
+    font-size: 3rem;
+    color: var(--text-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+.container2 #plorer{
+    display: inline;
+    margin: 0;
+    padding: 0;
+    font-family: Duplet-Regular;
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: var(--text-secondary);
+}
+
+.right{
+    width: 50%;
+    background-color: var(--text-tertiary);
+    border-radius: 8%; 
+    margin: 0;
+}
+
+.right p{
+    margin: 0;
+    padding: 50px;
+}
