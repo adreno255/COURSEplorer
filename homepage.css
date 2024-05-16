@@ -65,14 +65,17 @@ body::-webkit-scrollbar-thumb{
     margin: 0;
     padding: 0;
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     height: 110vh;
 }
 
-.nav-item{
+.list{
     width: 40%;
+    position: relative;
+    z-index: 1;
 }
 
 .nav-logo{
@@ -84,13 +87,65 @@ body::-webkit-scrollbar-thumb{
     scale: 45%;
 }
 
-.nav-link{
+.navbar-nav .list a svg{
     fill: white;
+    transition: 0.5s;
 }
 
-.nav-link #home{
+.navbar-nav .list.active a svg{
     fill: black;
+    transform: translateX(8px) scale(150%);
 }
+
+.indicator{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background: var(--bg-primary);
+    top: 25%;
+    border-radius: 50% 0 0 50%;
+    transition: 0.5s;
+}
+
+.indicator::before{
+    content: '';
+    position: absolute;
+    top: -40%;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    border-bottom-right-radius: 20px;
+    background: var(--text-tertiary); 
+    box-shadow: 5px 5px 0 0 var(--bg-primary);
+}
+
+.indicator::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 40%;
+    height: 40%;
+    border-top-right-radius: 20px;
+    background: var(--text-tertiary);
+    box-shadow: 5px -5px 0 0 var(--bg-primary);
+}
+
+.navbar-nav .list:nth-child(2).active ~ .indicator{
+    transform: translateY(0);
+}
+
+.navbar-nav .list:nth-child(3).active ~ .indicator{
+    transform: translateY(115%);
+}
+
+.navbar-nav .list:nth-child(4).active ~ .indicator{
+    transform: translateY(230%);
+} 
+
+.navbar-nav .list:nth-child(5).active ~ .indicator{
+    transform: translateY(350%);
+} 
 
 section{
     margin-left: 7rem;
