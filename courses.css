@@ -1,0 +1,46 @@
+@font-face{
+    src: url(Fonts/DupletRounded-Light-BF6606345906e60.otf);
+    font-family: Duplet-Light;
+}
+
+@font-face{
+    src: url(Fonts/DupletRounded-Regular-BF6606345a6aa3a.otf);
+    font-family: Duplet-Regular;
+}
+
+@font-face{
+    src: url(Fonts/FredokaOne-Regular.otf);
+    font-family: Fredoka;
+}
+
+@font-face{
+    src: url(Fonts/Nunito-Regular.ttf);
+    font-family: Nunito;
+}
+
+:root{
+    font-size: 20px;
+    font-family: Nunito;
+    --text-primary: black;
+    --text-secondary: #5d7b6f;
+    --text-tertiary: #a4c3a2;
+    --bg-primary: #eae7d6; 
+}
+
+body{
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* CONTENT (MODIFIABLE) */
+
+h1{
+    font-family: Fredoka;
+    font-size: 4.75rem;
+    color: var(--text-secondary);
+    position: absolute;
+    left: 25%;
+}
