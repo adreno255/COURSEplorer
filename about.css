@@ -1,0 +1,290 @@
+@font-face{
+    src: url(Fonts/DupletRounded-Light-BF6606345906e60.otf);
+    font-family: Duplet-Light;
+}
+
+@font-face{
+    src: url(Fonts/DupletRounded-Regular-BF6606345a6aa3a.otf);
+    font-family: Duplet-Regular;
+}
+
+@font-face{
+    src: url(Fonts/FredokaOne-Regular.otf);
+    font-family: Fredoka;
+}
+
+@font-face{
+    src: url(Fonts/Nunito-Regular.ttf);
+    font-family: Nunito;
+}
+
+:root{
+    font-size: 20px;
+    font-family: Nunito;
+    --text-primary: black;
+    --text-secondary: #5d7b6f;
+    --text-tertiary: #a4c3a2;
+    --bg-primary: #eae7d6; 
+}
+
+body{
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.titlepage{
+    position: relative;
+    overflow: visible;
+    width: 55vw;
+    height: 5vh;
+    top: 0vh;
+    left: 27vw;
+}
+
+.webname{
+    margin-top: 5%;
+    top: -23%;
+    left: -60%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    scale: 75%;
+}
+
+.webname #about{
+    font-family: Fredoka;
+    font-size: 4.75rem;
+    color: var(--text-secondary);
+    display: inline;
+}
+
+.webname #us{
+    font-family: Duplet-Regular;
+    font-size: 4.7rem;
+    font-weight: bold;
+    color: var(--text-tertiary);
+    display: inline;
+    padding-left: 25px;
+}
+
+.container1{
+    display: flex;
+    margin-top: 15vh;
+    margin-right: 7vw;
+    margin-left: -4vw;
+    margin-bottom: 5vh;
+    justify-content: space-evenly;
+}
+
+.developers{
+    right: 10vh;
+    width: 35%;
+    background-color: hsl(155, 25%, 38%, 0.17);
+    border-radius: 10% 10% 10% 10%;
+    height: 600px;
+}
+
+.developers #dev{
+    margin-left: 2vw;
+    text-align: left;
+    font-family: Duplet-Light;
+    font-size: 1.9rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.names{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 1200px;
+}
+
+.n1{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: var(--text-tertiary);
+    width: 85%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    overflow: visible;
+}
+
+.r1{
+    text-align: center;
+    font-family: Duplet-Light;
+    font-size: 1.5rem;
+    padding-left: 15%;
+}
+
+.n2{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: var(--text-tertiary);
+    width: 85%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    overflow: visible;
+}
+
+.r2{
+    text-align: center;
+    font-family: Duplet-Light;
+    font-size: 1.5rem;
+    padding-left: 15%;
+}
+
+.n3{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: var(--text-tertiary);
+    width: 85%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 7%;
+    margin-bottom: 10%;
+    overflow: visible;
+}
+
+.r3{
+    text-align: center;
+    font-family: Duplet-Light;
+    font-size: 1.5rem;
+    padding-left: 15%;
+}
+
+.n4{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    background-color: var(--text-tertiary);
+    width: 85%;
+    height: 50px;
+    border-radius: 20px;
+    margin-left: 7%;
+    overflow: visible;
+}
+
+.r4{
+    text-align: center;
+    font-family: Duplet-Light;
+    font-size: 1.5rem;
+    padding-left: 2.5%;
+}
+
+.right{
+    left: 20vh;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    justify-content: space-evenly;
+}
+
+.objectives{
+    left: 30vh;
+    background-color: hsl(155, 25%, 38%, 0.17);
+    border-radius: 30px;
+    font-family: Duplet-Light;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-left: 4%;
+    padding-bottom: 2%;
+    padding-right: 4%;
+}
+
+.objectives #obj{
+    text-align: center;
+    font-family: Duplet-Light;
+    font-size: 1.9rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.scope{
+    background-color: hsl(155, 25%, 38%, 0.17);
+    border-radius: 30px;
+    font-family: Duplet-Light;
+    text-align: center;
+    font-size: 1.1rem;
+    padding-left: 4%;
+    padding-bottom: 2%;
+    padding-right: 4%;
+}
+
+.scope #scp{
+    text-align: center;
+    font-family: Duplet-Light;
+    font-size: 1.9rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+}
+
+.image.circle1{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
+    position: relative;
+    shape-outside: circle();
+    margin: 0px;
+    float: left;
+    top: -10px;
+}
+
+.image.circle2{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
+    position: relative;
+    shape-outside: circle();
+    margin: 0px;
+    float: left;
+    top: -10px;
+}
+
+.image.circle3{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
+    position: relative;
+    shape-outside: circle();
+    margin: 0px;
+    float: left;
+    top: -10px;
+}
+
+.image.circle4{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
+    position: relative;
+    shape-outside: circle();
+    margin: 0px;
+    float: left;
+    top: -10px;
+}
+
+
+.desc.desc1{
+    font-size: 1rem;
+    color: var(--text-primary);
+    position: relative;
+    top: 20%;
+    left: -40%;
+    width: 45%;
+}
