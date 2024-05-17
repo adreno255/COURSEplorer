@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
             .then(response => response.text())
             .then(html => {
                 document.getElementById(targetId).innerHTML = html;
+
+                window.scrollTo({ top: 0})
             })
             .catch(error => {
                 console.error('Error loading HTML file:', error);
@@ -42,6 +44,11 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('courses').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
         loadPageContent('courses');
+    });
+
+    document.getElementById('about').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        loadPageContent('about');
     });
 
     // Load initial page content (e.g., home page)
