@@ -37,21 +37,7 @@ body{
 
 .titlepage{
     position: relative;
-    overflow: visible;
-    width: 55vw;
-    height: 5vh;
-    top: 0vh;
-    left: 27vw;
-}
-
-.webname{
-    margin-top: 5%;
-    top: -23%;
-    left: -60%;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    scale: 75%;
+    top: 5vh;
 }
 
 .webname #about{
@@ -72,11 +58,10 @@ body{
 
 .container1{
     display: flex;
-    margin-top: 15vh;
-    margin-right: 7vw;
-    margin-left: -4vw;
-    margin-bottom: 5vh;
+    margin-top: 10vh;
     justify-content: space-evenly;
+    width: 90vw;
+    margin-bottom: 10vh;
 }
 
 .developers{
@@ -84,7 +69,6 @@ body{
     width: 35%;
     background-color: hsl(155, 25%, 38%, 0.17);
     border-radius: 10% 10% 10% 10%;
-    height: 600px;
 }
 
 .developers #dev{
@@ -94,20 +78,21 @@ body{
     font-size: 1.9rem;
     color: var(--text-secondary);
     font-weight: bold;
+
 }
 
 .names{
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+}
+
+.n{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    text-align: center;
-    height: 1200px;
-}
-
-.n1{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
     background-color: var(--text-tertiary);
     width: 85%;
     height: 50px;
@@ -117,70 +102,11 @@ body{
     overflow: visible;
 }
 
-.r1{
-    text-align: center;
+.n p{
     font-family: Duplet-Light;
-    font-size: 1.5rem;
-    padding-left: 15%;
-}
-
-.n2{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    background-color: var(--text-tertiary);
-    width: 85%;
-    height: 50px;
-    border-radius: 20px;
-    margin-left: 7%;
-    margin-bottom: 10%;
-    overflow: visible;
-}
-
-.r2{
-    text-align: center;
-    font-family: Duplet-Light;
-    font-size: 1.5rem;
-    padding-left: 15%;
-}
-
-.n3{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    background-color: var(--text-tertiary);
-    width: 85%;
-    height: 50px;
-    border-radius: 20px;
-    margin-left: 7%;
-    margin-bottom: 10%;
-    overflow: visible;
-}
-
-.r3{
-    text-align: center;
-    font-family: Duplet-Light;
-    font-size: 1.5rem;
-    padding-left: 15%;
-}
-
-.n4{
-    display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    background-color: var(--text-tertiary);
-    width: 85%;
-    height: 50px;
-    border-radius: 20px;
-    margin-left: 7%;
-    overflow: visible;
-}
-
-.r4{
-    text-align: center;
-    font-family: Duplet-Light;
-    font-size: 1.5rem;
-    padding-left: 2.5%;
+    font-size: clamp(.75rem, 1.5vw, 3rem);
+    margin: auto;
+    padding: 0;
 }
 
 .right{
@@ -188,7 +114,6 @@ body{
     display: flex;
     flex-direction: column;
     width: 50%;
-
     justify-content: space-evenly;
 }
 
@@ -202,6 +127,8 @@ body{
     padding-left: 4%;
     padding-bottom: 2%;
     padding-right: 4%;
+    margin-bottom: 5vh;
+
 }
 
 .objectives #obj{
@@ -231,60 +158,13 @@ body{
     font-weight: bold;
 }
 
-.image.circle1{
+.n img{
     width: 70px;
     height: 70px;
     border-radius: 50%;
     box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
     position: relative;
-    shape-outside: circle();
     margin: 0px;
     float: left;
     top: -10px;
-}
-
-.image.circle2{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
-    position: relative;
-    shape-outside: circle();
-    margin: 0px;
-    float: left;
-    top: -10px;
-}
-
-.image.circle3{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
-    position: relative;
-    shape-outside: circle();
-    margin: 0px;
-    float: left;
-    top: -10px;
-}
-
-.image.circle4{
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
-    position: relative;
-    shape-outside: circle();
-    margin: 0px;
-    float: left;
-    top: -10px;
-}
-
-
-.desc.desc1{
-    font-size: 1rem;
-    color: var(--text-primary);
-    position: relative;
-    top: 20%;
-    left: -40%;
-    width: 45%;
 }

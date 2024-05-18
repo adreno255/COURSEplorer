@@ -41,6 +41,6 @@ h1{
     font-family: Fredoka;
     font-size: 4.75rem;
     color: var(--text-secondary);
-    position: absolute;
-    left: 25%;
+    margin-top: 5vh;
+    text-align: center;
 }
