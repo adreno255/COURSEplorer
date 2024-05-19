@@ -46,6 +46,11 @@ document.addEventListener("DOMContentLoaded", function() {
         loadPageContent('courses');
     });
 
+    document.getElementById('careers').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        loadPageContent('careers');
+    });
+
     document.getElementById('about').addEventListener('click', function(event) {
         event.preventDefault(); // Prevent default link behavior
         loadPageContent('about');
