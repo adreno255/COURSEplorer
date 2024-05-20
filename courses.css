@@ -57,11 +57,6 @@ hr{
     border-radius: 10rem;
 }
 
-.buttons{
-    color: var(--bg-primary);
-    text-decoration: none;
-} 
-
 .grid{
     display: grid;
     gap: 2.75rem;
@@ -84,6 +79,7 @@ hr{
     border-radius: 15%;
     background-color: var(--text-tertiary);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .button p{

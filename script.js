@@ -16,46 +16,52 @@ function()
 })
 
 document.addEventListener("DOMContentLoaded", function() {
-    // Function to load HTML file into a section
-    function loadHTMLFile(url, targetId) {
+    function loadHTMLFile(url, targetId, callback) {
         fetch(url)
             .then(response => response.text())
             .then(html => {
                 document.getElementById(targetId).innerHTML = html;
-
                 window.scrollTo({ top: 0})
+                if (callback) callback();
             })
             .catch(error => {
                 console.error('Error loading HTML file:', error);
             });
     }
 
-    // Load HTML file into section
     function loadPageContent(page) {
-        loadHTMLFile(page + '.html', 'dynamic-content'); // Load HTML content based on page name
+        loadHTMLFile(page + '.html', 'dynamic-content', function() {
+            if(page == 'courses'){
+                const humanities = document.getElementById('humanities');
+                if(humanities){
+                    humanities.addEventListener('click', function(event){
+                        event.preventDefault(); 
+                        loadPageContent('Courses HTML/Humanities/humanities');  
+                    })
+                }
+            }
+        }); 
     }
 
-    // Event listeners for navbar links
     document.getElementById('home').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault(); 
         loadPageContent('homepage');
     });
 
     document.getElementById('courses').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault(); 
         loadPageContent('courses');
     });
 
     document.getElementById('careers').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault(); 
         loadPageContent('careers');
     });
 
     document.getElementById('about').addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
+        event.preventDefault(); 
         loadPageContent('about');
     });
-
-    // Load initial page content (e.g., home page)
+    
     loadPageContent('homepage');
 });

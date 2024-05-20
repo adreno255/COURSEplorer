@@ -87,12 +87,13 @@ body::-webkit-scrollbar-thumb{
     scale: 45%;
 }
 
-.navbar-nav .list a svg{
+.navbar-nav .list svg{
     fill: white;
     transition: 0.5s;
+    cursor: pointer;
 }
 
-.navbar-nav .list.active a svg{
+.navbar-nav .list.active svg{
     fill: black;
     transform: translateX(8px) scale(150%);
 }
