@@ -56,10 +56,6 @@ hr{
     border-radius: 10rem;
 }
 
-.buttons{
-    color: var(--bg-primary);
-    text-decoration: none;
-} 
 
 .grid{
     display: grid;
@@ -83,11 +79,21 @@ hr{
     border-radius: 15%;
     background-color: var(--text-tertiary);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .button p{
     font-family: Fredoka;
     font-size: 1.5rem;
+    color: var(--bg-primary);
+    margin-bottom: 5%;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+.button p.long{
+    font-family: Fredoka;
+    font-size: 1rem;
     color: var(--bg-primary);
     margin-bottom: 5%;
     letter-spacing: .2rem;

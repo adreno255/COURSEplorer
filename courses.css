@@ -88,6 +88,15 @@ hr{
     color: var(--bg-primary);
     margin-bottom: 5%;
     letter-spacing: .2rem;
+    text-align: center;
+}
+
+.button p.long{
+    font-family: Fredoka;
+    font-size: 1rem;
+    color: var(--bg-primary);
+    margin-bottom: 5%;
+    letter-spacing: .2rem;
 }
 
 .button hr{
@@ -103,6 +112,12 @@ hr{
     height: 50%;
     margin: auto;
     margin-bottom: 15%;
+}
+
+.button img{
+    height: 55%;
+    margin: auto;
+    margin-bottom: 10%;
 }
 
 .button:hover{
