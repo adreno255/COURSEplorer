@@ -29,39 +29,29 @@ document.addEventListener("DOMContentLoaded", function() {
             });
     }
 
+    function loadPage(page_id, page_path){
+            document.getElementById(page_id).addEventListener('click', function(event) {
+            event.preventDefault(); 
+            loadPageContent(page_path);
+        });
+    }
+
     function loadPageContent(page) {
         loadHTMLFile(page + '.html', 'dynamic-content', function() {
             if(page == 'courses'){
-                const humanities = document.getElementById('humanities');
-                if(humanities){
-                    humanities.addEventListener('click', function(event){
-                        event.preventDefault(); 
-                        loadPageContent('Courses HTML/Humanities/humanities');  
-                    })
-                }
+                loadPage('agriculture', 'Courses HTML/Agriculture/agriculture');
+            }
+
+            if(page == 'Courses HTML/Agriculture/agriculture'){
+                loadPage('bs-agriculture', 'Courses HTML/Agriculture/bs-agriculture');
             }
         }); 
     }
 
-    document.getElementById('home').addEventListener('click', function(event) {
-        event.preventDefault(); 
-        loadPageContent('homepage');
-    });
-
-    document.getElementById('courses').addEventListener('click', function(event) {
-        event.preventDefault(); 
-        loadPageContent('courses');
-    });
-
-    document.getElementById('careers').addEventListener('click', function(event) {
-        event.preventDefault(); 
-        loadPageContent('careers');
-    });
-
-    document.getElementById('about').addEventListener('click', function(event) {
-        event.preventDefault(); 
-        loadPageContent('about');
-    });
+    loadPage('home', 'homepage');
+    loadPage('courses', 'courses');
+    loadPage('careers', 'careers');
+    loadPage('about', 'about');
     
     loadPageContent('homepage');
 });
