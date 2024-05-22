@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             if(page == 'Courses HTML/Agriculture/agriculture'){
+                loadPage('back-button', 'courses');
                 loadPage('bs-agriculture', 'Courses HTML/Agriculture/bs-agriculture');
             }
         }); 

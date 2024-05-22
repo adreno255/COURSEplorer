@@ -95,7 +95,7 @@ hr{
     font-family: Fredoka;
     font-size: 1rem;
     color: var(--bg-primary);
-    margin-bottom: 5%;
+    margin: auto auto 5% auto;
     letter-spacing: .2rem;
 }
 
