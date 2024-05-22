@@ -120,12 +120,12 @@ hr{
     margin: 0 auto auto 3%;
 }
 
-.button p.long{
-    font-family: Fredoka;
-    font-size: 1rem;
-    color: var(--bg-primary);
-    margin-bottom: 5%;
-    letter-spacing: .2rem;
+.button .title.long{
+    font-size: 1.5rem;
+}
+
+p.long{
+    font-size: 1.1rem;
 }
 
 .button hr{
