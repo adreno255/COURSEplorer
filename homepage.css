@@ -103,14 +103,14 @@ body{
 
 .webname #course{
     font-family: Fredoka;
-    font-size: 4.75rem;
+    font-size: 15vh;
     color: var(--text-secondary);
     display: inline;
 }
 
 .webname #plorer{
     font-family: Duplet-Regular;
-    font-size: 4.5rem;
+    font-size: 14vh;
     font-weight: bold;
     color: var(--text-secondary);
     display: inline;
@@ -118,14 +118,14 @@ body{
 
 .webname h3{
     font-family: Duplet-Regular;
-    font-size: 2.25rem;
+    font-size: 7vh;
     color: var(--text-tertiary);
     margin-top: -1%;
     margin-left: 3%;
 }
 
 .desc.desc1{
-    font-size: 1rem;
+    font-size: 3vh;
     color: var(--text-primary);
     position: relative;
     top: 20%;
