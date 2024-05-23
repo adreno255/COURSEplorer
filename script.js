@@ -39,41 +39,41 @@ document.addEventListener("DOMContentLoaded", function() {
     function loadPageContent(page) {
         loadHTMLFile(page + '.html', 'dynamic-content', function() {
             if(page == 'courses'){
-                loadPage('agriculture', 'Courses HTML/Agriculture/agriculture');
-                loadPage('architecture-and-design', 'Courses HTML/Architecture-and-Design/architecture-and-design');
-                loadPage('business', 'Courses HTML/Business/business');
-                loadPage('education', 'Courses HTML/Education/education');
-                loadPage('engineering', 'Courses HTML/Engineering/engineering');
-                loadPage('formal-sciences', 'Courses HTML/Formal-Sciences/formal-sciences');
-                loadPage('health-sciences', 'Courses HTML/Health-Sciences/health-sciences');
-                loadPage('humanities', 'Courses HTML/Humanities/humanities');
-                loadPage('media-and-communication', 'Courses HTML/Media-and-Communication/media-and-communication');
-                loadPage('natural-sciences', 'Courses HTML/Natural-Sciences/natural-sciences');
-                loadPage('nutrition', 'Courses HTML/Nutrition/nutrition');
-                loadPage('public-administration', 'Courses HTML/Public-Administration/public-administration');
-                loadPage('social-sciences', 'Courses HTML/Social-Sciences/social-sciences');
-                loadPage('transportation', 'Courses HTML/Transportation/transportation');
+                loadPage('agriculture', 'Courses HTML/agriculture');
+                loadPage('architecture-and-design', 'Courses HTML/architecture-and-design');
+                loadPage('business', 'Courses HTML/business');
+                loadPage('education', 'Courses HTML/education');
+                loadPage('engineering', 'Courses HTML/engineering');
+                loadPage('formal-sciences', 'Courses HTML/formal-sciences');
+                loadPage('health-sciences', 'Courses HTML/health-sciences');
+                loadPage('humanities', 'Courses HTML/humanities');
+                loadPage('media-and-communication', 'Courses HTML/media-and-communication');
+                loadPage('natural-sciences', 'Courses HTML/natural-sciences');
+                loadPage('nutrition', 'Courses HTML/nutrition');
+                loadPage('public-administration', 'Courses HTML/public-administration');
+                loadPage('social-sciences', 'Courses HTML/social-sciences');
+                loadPage('transportation', 'Courses HTML/transportation');
             }
 
-            if(page == 'Courses HTML/Agriculture/agriculture'){
+            if(page == 'Courses HTML/agriculture'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-agriculture', 'Courses HTML/Agriculture/bs-agriculture');
                 loadPage('bs-agribusiness', 'Courses HTML/Agriculture/bs-agribusiness');
                 loadPage('bs-agroforestry', 'Courses HTML/Agriculture/bs-agroforestry');
             }
 
-            if(page == 'Courses HTML/Architecture-and-Design/architecture-and-design'){
+            if(page == 'Courses HTML/architecture-and-design'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-architecture', 'Courses HTML/Architecture-and-Design/bs-architecture');
                 loadPage('b-landscape-architecture', 'Courses HTML/Architecture-and-Design/b-landscape-architecture');
                 loadPage('bs-interior-design', 'Courses HTML/Architecture-and-Design/bs-interior-design');
             }
 
-            if(page == 'Courses HTML/Business/business'){
+            if(page == 'Courses HTML/business'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-accountancy', 'Courses HTML/Business/bs-accountancy');
                 loadPage('bs-accounting-technology', 'Courses HTML/Business/bs-accounting-technology');
-                loadPage('bs-business-administration-ba', 'Courses HTML/Business/bs-business-administration-ba');
+                loadPage('bs-business-administration-be', 'Courses HTML/Business/bs-business-administration-be');
                 loadPage('bs-business-administration-fm', 'Courses HTML/Business/bs-business-administration-fm');
                 loadPage('bs-business-administration-hrdm', 'Courses HTML/Business/bs-business-administration-hrdm');
                 loadPage('bs-business-administration-mm', 'Courses HTML/Business/bs-business-administration-mm');
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bs-tourism-management', 'Courses HTML/Business/bs-tourism-management');
             }
 
-            if(page == 'Courses HTML/Education/education'){
+            if(page == 'Courses HTML/education'){
                 loadPage('back-button', 'courses');
                 loadPage('b-secondary-education', 'Courses HTML/Education/b-secondary-education');
                 loadPage('b-elementary-education', 'Courses HTML/Education/b-elementary-education');
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('b-physical-education', 'Courses HTML/Education/b-physical-education');
             } 
 
-            if(page == 'Courses HTML/Engineering/engineering'){
+            if(page == 'Courses HTML/engineering'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-aeronautical-engineering', 'Courses HTML/Engineering/bs-aeronautical-engineering');
                 loadPage('bs-ceramic-engineering', 'Courses HTML/Engineering/bs-ceramic-engineering');
@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bs-sanitary-engineering', 'Courses HTML/Engineering/bs-sanitary-engineering');
             }         
 
-            if(page == 'Courses HTML/Formal-Sciences/formal-sciences'){
+            if(page == 'Courses HTML/formal-sciences'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-computer-science', 'Courses HTML/Formal-Sciences/bs-computer-science');
                 loadPage('bs-information-technology', 'Courses HTML/Formal-Sciences/bs-information-technology');
@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bs-statistics', 'Courses HTML/Formal-Sciences/bs-statistics');
             }            
 
-            if(page == 'Courses HTML/Health-Sciences/health-sciences'){
+            if(page == 'Courses HTML/health-sciences'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-medical-technology', 'Courses HTML/Health-Sciences/bs-medical-technology');
                 loadPage('bs-midwifery', 'Courses HTML/Health-Sciences/bs-midwifery');
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bs-sports-science', 'Courses HTML/Health-Sciences/bs-sports-science');
             }            
 
-            if(page == 'Courses HTML/Humanities/humanities'){
+            if(page == 'Courses HTML/humanities'){
                 loadPage('back-button', 'courses');
                 loadPage('ab-history', 'Courses HTML/Humanities/ab-history');
                 loadPage('ab-philosophy', 'Courses HTML/Humanities/ab-philosophy');
@@ -160,7 +160,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bfa-visual-communication', 'Courses HTML/Humanities/bfa-visual-communication');
             }            
 
-            if(page == 'Courses HTML/Media-and-Communication/media-and-communication'){
+            if(page == 'Courses HTML/media-and-communication'){
                 loadPage('back-button', 'courses');
                 loadPage('ab-broadcasting', 'Courses HTML/Media-and-Communication/ab-broadcasting');
                 loadPage('ab-communication', 'Courses HTML/Media-and-Communication/ab-communication');
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('ab-mass-communication', 'Courses HTML/Media-and-Communication/ab-mass-communication');
             }            
 
-            if(page == 'Courses HTML/Natural-Sciences/natural-sciences'){
+            if(page == 'Courses HTML/natural-sciences'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-environmental-science', 'Courses HTML/Natural-Sciences/bs-environmental-science');
                 loadPage('bs-forestry', 'Courses HTML/Natural-Sciences/bs-forestry');
@@ -182,13 +182,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bs-chemistry', 'Courses HTML/Natural-Sciences/bs-chemistry');
             }            
 
-            if(page == 'Courses HTML/Nutrition/nutrition'){
+            if(page == 'Courses HTML/nutrition'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-food-technology', 'Courses HTML/Nutrition/bs-food-technology');
                 loadPage('bs-nutrition-and-dietetics', 'Courses HTML/Nutrition/bs-nutrition-and-dietetics');
             }
 
-            if(page == 'Courses HTML/Public-Administration/public-administration'){
+            if(page == 'Courses HTML/public-administration'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-community-development', 'Courses HTML/Public-Administration/bs-community-development');
                 loadPage('bs-customs-administration', 'Courses HTML/Public-Administration/bs-customs-administration');
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bs-social-work', 'Courses HTML/Public-Administration/bs-social-work');
             }            
 
-            if(page == 'Courses HTML/Social-Sciences/social-sciences'){
+            if(page == 'Courses HTML/social-sciences'){
                 loadPage('back-button', 'courses');
                 loadPage('ab-economics', 'Courses HTML/Social-Sciences/ab-economics');
                 loadPage('bs-economics', 'Courses HTML/Social-Sciences/bs-economics');
@@ -217,10 +217,67 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('ab-islamic-studies', 'Courses HTML/Social-Sciences/ab-islamic-studies');
             }            
 
-            if(page == 'Courses HTML/Transportation/transportation'){
+            if(page == 'Courses HTML/transportation'){
                 loadPage('back-button', 'courses');
                 loadPage('bs-marine-transportation', 'Courses HTML/Transportation/bs-marine-transportation');
             }
+
+            if (page.startsWith('Courses HTML/Agriculture/')) {
+                loadPage('back-button', 'Courses HTML/agriculture');
+            }
+
+            if (page.startsWith('Courses HTML/Architecture-and-Design/')) {
+                loadPage('back-button', 'Courses HTML/architecture-and-design');
+            }
+
+            if (page.startsWith('Courses HTML/Business/')) {
+                loadPage('back-button', 'Courses HTML/business');
+            }
+
+            if (page.startsWith('Courses HTML/Education/')) {
+                loadPage('back-button', 'Courses HTML/education');
+            }
+
+            if (page.startsWith('Courses HTML/Engineering/')) {
+                loadPage('back-button', 'Courses HTML/engineering');
+            }
+
+            if (page.startsWith('Courses HTML/Formal-Sciences/')) {
+                loadPage('back-button', 'Courses HTML/formal-sciences');
+            }
+
+            if (page.startsWith('Courses HTML/Health-Sciences/')) {
+                loadPage('back-button', 'Courses HTML/health-sciences');
+            }
+
+            if (page.startsWith('Courses HTML/Humanities/')) {
+                loadPage('back-button', 'Courses HTML/humanities');
+            }
+
+            if (page.startsWith('Courses HTML/Media-and-Communication/')) {
+                loadPage('back-button', 'Courses HTML/media-and-communication');
+            }
+
+            if (page.startsWith('Courses HTML/Natural-Sciences/')) {
+                loadPage('back-button', 'Courses HTML/natural-sciences');
+            }
+
+            if (page.startsWith('Courses HTML/Nutrition/')) {
+                loadPage('back-button', 'Courses HTML/nutrition');
+            }
+
+            if (page.startsWith('Courses HTML/Public-Administration/')) {
+                loadPage('back-button', 'Courses HTML/public-administration');
+            }
+
+            if (page.startsWith('Courses HTML/Social-Sciences/')) {
+                loadPage('back-button', 'Courses HTML/social-sciences');
+            }
+
+            if (page.startsWith('Courses HTML/Transportation/')) {
+                loadPage('back-button', 'Courses HTML/transportation');
+            }
+            
         }); 
     }
 

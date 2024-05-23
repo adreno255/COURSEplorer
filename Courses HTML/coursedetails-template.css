@@ -20,6 +20,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 5vh;
+    top: 4vh;
     z-index: 10;
 }
 
@@ -61,7 +62,7 @@ body {
 
 .webname {
     width: 40vw;
-    margin-left: 3vw;
+    margin-left: 2vw;
     margin-bottom: 2vh;
 }
 
@@ -72,11 +73,16 @@ body {
     display: inline;
 }
 
+.webname .course.medium {
+    font-size: 9vh;
+}
+
 .webname .course.long {
-    font-family: Fredoka;
-    font-size: 7vh;
-    color: var(--text-secondary);
-    display: inline;
+    font-size: 6vh;
+}
+
+.webname .course.x-long {
+    font-size: 5vh;
 }
 
 .top {
@@ -97,11 +103,22 @@ body {
     justify-self: center;
 }
 
-.left .info.regular {
+.left .info {
     width: 35vw;
     margin: auto auto auto 3vw;
     font-family: Duplet-Light;
-    font-size: 4.3vh;
+}
+
+.left .info.regular {
+    font-size: 4vh;
+}
+
+.left .info.medium {
+    font-size: 3.5vh;
+}
+
+.left .info.long {
+    font-size: 3vh;
 }
 
 .right {
