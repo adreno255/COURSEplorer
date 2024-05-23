@@ -1,0 +1,102 @@
+@font-face {
+    src: url(Fonts/DupletRounded-Light-BF6606345906e60.otf);
+    font-family: Duplet-Light;
+}
+
+@font-face {
+    src: url(Fonts/DupletRounded-Regular-BF6606345a6aa3a.otf);
+    font-family: Duplet-Regular;
+}
+
+@font-face {
+    src: url(Fonts/FredokaOne-Regular.otf);
+    font-family: Fredoka;
+}
+
+@font-face {
+    src: url(Fonts/Nunito-Regular.ttf);
+    font-family: Nunito;
+}
+
+:root {
+    font-size: 20px;
+    font-family: Nunito;
+    --text-primary: black;
+    --text-secondary: #5d7b6f;
+    --text-tertiary: #a4c3a2;
+    --bg-primary: #eae7d6;
+}
+
+body {
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.titlepage {
+    position: relative;
+    top: -9vh;
+    text-align: center;
+    margin-bottom: -20vh;
+}
+
+.webname {
+    font-family: Fredoka;
+    font-size: 5rem;
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    background-color: #e8d9bc;
+    margin-left: 10%;
+    border-radius: 5vh;
+    margin-bottom: 5vh;
+}
+
+.left {
+    margin-top: 6vh;
+    background-color: var(--text-tertiary);
+    width: 43%;
+    margin-bottom: 6vh;
+    margin-left: -11vh;
+    border-radius: 5vh;
+}
+
+.top {
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.top #text {
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 0vh;
+}
+
+.right {
+    margin-top: 6vh;
+    background-color: var(--text-tertiary);
+    width: 43%;
+    margin-bottom: 6vh;
+    margin-right: -11vh;
+    border-radius: 5vh;
+}
+
+.top {
+    text-align: center;
+}
+
+.bottom {
+    font-family: Nunito;
+    font-size: 1.1rem;
+    margin-left: 2vh;
+    margin-right: 4vh;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+}
