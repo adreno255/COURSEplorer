@@ -38,6 +38,7 @@ body{
 .titlepage{
     position: relative;
     top: 5vh;
+    opacity: 0;
 }
 
 .webname #about{
@@ -69,6 +70,7 @@ body{
     width: 35%;
     background-color: hsl(155, 25%, 38%, 0.17);
     border-radius: 10% 10% 10% 10%;
+    opacity: 0;
 }
 
 .developers #dev{
@@ -104,7 +106,7 @@ body{
 
 .n p{
     font-family: Duplet-Light;
-    font-size: clamp(.75rem, 1.5vw, 3rem);
+    font-size: 3vh;
     margin: auto;
     padding: 0;
 }
@@ -128,7 +130,7 @@ body{
     padding-bottom: 2%;
     padding-right: 4%;
     margin-bottom: 5vh;
-
+    opacity: 0;
 }
 
 .objectives #obj{
@@ -148,6 +150,7 @@ body{
     padding-left: 4%;
     padding-bottom: 2%;
     padding-right: 4%;
+    opacity: 0;
 }
 
 .scope #scp{
@@ -167,4 +170,40 @@ body{
     margin: 0px;
     float: left;
     top: -10px;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes sequentialFadeIn {
+    from{
+        transform: translateY(5vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.animation1{
+    animation: fade 0.5s ease-in-out forwards;
+}
+
+.animation2{
+    animation: sequentialFadeIn 0.75s ease-in-out 0.5s, fade 0.75s ease-in-out 0.5s forwards;
+}
+
+.animation3{
+    animation: sequentialFadeIn 0.75s ease-in-out 0.75s, fade 0.75s ease-in-out 0.75s forwards;
+}
+
+.animation4{
+    animation: sequentialFadeIn 0.75s ease-in-out 1s, fade 0.75s ease-in-out 1s forwards;
 }

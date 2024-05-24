@@ -62,12 +62,15 @@ body {
     font-size: 5rem;
     color: var(--text-secondary);
     text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.3);
+    animation: fade 1s ease-in-out forwards;
+    opacity: 0;
 }
 
 .container1 {
     display: flex;
     justify-content: space-evenly;
     width: 80%;
+    height: 85vh;
     background-color: #e8d9bc;
     margin-left: 10%;
     border-radius: 5vh;
@@ -81,6 +84,7 @@ body {
     margin-bottom: 6vh;
     margin-left: -11vh;
     border-radius: 5vh;
+    animation: sequentialFadeIn 0.75s ease-in-out, fade 0.75s ease-in-out forwards;
 }
 
 .top {
@@ -103,6 +107,7 @@ body {
     margin-bottom: 6vh;
     margin-right: -11vh;
     border-radius: 5vh;
+    animation: sequentialFadeIn 0.75s ease-in-out, fade 0.75s ease-in-out forwards;
 }
 
 .top {
@@ -116,4 +121,24 @@ body {
     margin-right: 4vh;
     margin-bottom: 3vh;
     margin-top: 1vh;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes sequentialFadeIn {
+    from{
+        transform: translateY(5vh);
+    }
+    to{
+        transform: translateY(0);
+    }
 }

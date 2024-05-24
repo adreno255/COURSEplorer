@@ -106,6 +106,7 @@ body{
     font-size: 15vh;
     color: var(--text-secondary);
     display: inline;
+    opacity: 0;
 }
 
 .webname #plorer{
@@ -114,6 +115,7 @@ body{
     font-weight: bold;
     color: var(--text-secondary);
     display: inline;
+    opacity: 0;
 }
 
 .webname h3{
@@ -122,6 +124,7 @@ body{
     color: var(--text-tertiary);
     margin-top: -1%;
     margin-left: 3%;
+    opacity: 0;
 }
 
 .desc.desc1{
@@ -135,6 +138,7 @@ body{
 
 .desc.desc1 p{
     margin-bottom: 0;
+    opacity: 0;
 }
 
 #unique-text{
@@ -144,4 +148,60 @@ body{
     font-size: 4vh;
     color: var(--text-tertiary);
     text-shadow: 0 0 3px hsla(0, 0%, 0%, 0.3);
+    opacity: 0;
 }
+
+/* ANIMATIONS */
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes widthUp {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes sequentialFadeIn {
+    from{
+        transform: translateY(5vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.animation1{
+    animation: fade 0.75s ease-in-out forwards;
+}
+
+.animation2{
+    animation: fade 0.75s ease-in-out 0.5s forwards;
+}
+
+.animation3{
+    animation: sequentialFadeIn 0.75s ease-in-out 1.25s, fade 0.75s ease-in-out 1.25s forwards;
+}
+
+.animation4{
+    animation: sequentialFadeIn 0.75s ease-in-out 1.8s, fade 0.75s ease-in-out 1.8s forwards;
+}
+
+.animation5{
+    animation: sequentialFadeIn 0.75s ease-in-out 1.9s, fade 0.75s ease-in-out 1.9s forwards;
+}
+
+.animation6{
+    animation: sequentialFadeIn 0.75s ease-in-out 2s, fade 0.75s ease-in-out 2s forwards;
+}
+
+

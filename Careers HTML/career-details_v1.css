@@ -62,6 +62,8 @@ body {
     font-size: 5rem;
     color: var(--text-secondary);
     text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.3);
+    animation: fade 1s ease-in-out forwards;
+    opacity: 0;
 }
 
 .container1 {
@@ -118,6 +120,7 @@ body {
     margin-left: -11vh;
     border-radius: 5vh;
     position: relative;
+    animation: sequentialFadeIn 0.75s ease-in-out, fade 0.75s ease-in-out forwards;
 }
 
 .next-container1{
@@ -194,6 +197,7 @@ body {
     margin-right: -11vh;
     border-radius: 5vh;
     position: relative;
+    animation: sequentialFadeIn 0.75s ease-in-out, fade 0.75s ease-in-out forwards;
 }
 
 .next-container2{
@@ -259,4 +263,24 @@ body {
     cursor: pointer;
     position: absolute;
     visibility: hidden;
+}
+
+/* ANIMATIONS */
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes sequentialFadeIn {
+    from{
+        transform: translateY(5vh);
+    }
+    to{
+        transform: translateY(0);
+    }
 }

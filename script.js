@@ -1,9 +1,4 @@
-document.addEventListener("DOMContentLoaded", 
-
-function() 
-{
-    var currentPage = window.location.pathname.split("/").pop();
-
+document.addEventListener("DOMContentLoaded", function() {
     const list = document.querySelectorAll('.list');
 
     function activeLink()
@@ -39,6 +34,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function loadPageContent(page) {
         loadHTMLFile(page + '.html', 'dynamic-content', function() {
             if(page == 'courses'){
+                
+                setTimeout(function() {
+                    const buttons = document.querySelectorAll('.button');
+                    buttons.forEach((button) => button.classList.add('transition'));
+                }, 100); 
+
                 loadPage('agriculture', 'Courses HTML/agriculture');
                 loadPage('architecture-and-design', 'Courses HTML/architecture-and-design');
                 loadPage('business', 'Courses HTML/business');
@@ -53,6 +54,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('public-administration', 'Courses HTML/public-administration');
                 loadPage('social-sciences', 'Courses HTML/social-sciences');
                 loadPage('transportation', 'Courses HTML/transportation');
+            }
+            
+            if(page.startsWith('Courses/HTML')){
+                setTimeout(function() {
+                    const buttons = document.querySelectorAll('.button');
+                    buttons.forEach((button) => button.classList.add('transition'));
+                }, 100); 
             }
 
             if(page == 'Courses HTML/agriculture'){
@@ -279,6 +287,12 @@ document.addEventListener("DOMContentLoaded", function() {
             }
             
             if(page == 'careers'){
+                
+                setTimeout(function() {
+                    const buttons = document.querySelectorAll('.button');
+                    buttons.forEach((button) => button.classList.add('transition'));
+                }, 100); 
+
                 loadPage('agriculture_careers', 'Careers HTML/agriculture_careers');
                 loadPage('architecture-and-design_careers', 'Careers HTML/architecture-and-design_careers');
                 loadPage('business_careers', 'Careers HTML/business_careers');
@@ -296,6 +310,11 @@ document.addEventListener("DOMContentLoaded", function() {
             }
 
             if (page.startsWith('Careers HTML/')) {
+                setTimeout(function() {
+                    const buttons = document.querySelectorAll('.button');
+                    buttons.forEach((button) => button.classList.add('transition'));
+                }, 100); 
+                
                 loadPage('back-button', 'careers');
             }
 

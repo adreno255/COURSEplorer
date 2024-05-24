@@ -45,6 +45,8 @@ h1{
     margin-bottom: 2vh;
     text-align: center;
     letter-spacing: 1vw;
+    opacity: 0;
+    animation: fade 1s ease-in-out forwards;
 }
 
 hr{
@@ -54,6 +56,11 @@ hr{
     height: .25vh;
     background-color: var(--text-secondary);
     border-radius: 10rem;
+}
+
+hr.title{
+    width: 0%;
+    animation: widthUp 1s ease-in-out 0.3s forwards;
 }
 
 
@@ -78,8 +85,12 @@ hr{
     height: 15rem;
     border-radius: 15%;
     background-color: var(--text-tertiary);
-    transition: 0.5s;
     cursor: pointer;
+    opacity: 0;
+}
+
+.transition{
+    transition: 0.5s;
 }
 
 .button p{
@@ -115,4 +126,113 @@ hr{
 .button:hover{
     transform: translate(1.75vh, -1.75vw);
     box-shadow: -1.75vh 1.75vw 0 0.25rem hsla(0, 0%, 50%, 0.75);
+}
+
+/* ANIMATIONS */
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes widthUp {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes sequentialFadeIn {
+    from{
+        transform: translateY(5vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.button:nth-child(1){
+    animation: sequentialFadeIn 0.75s ease-in-out, fade 0.75s ease-in-out forwards;
+}
+
+.button:nth-child(2){
+    animation: sequentialFadeIn 0.75s ease-in-out 0.25s, fade 0.75s ease-in-out 0.25s forwards;
+}
+
+.button:nth-child(3){
+    animation: sequentialFadeIn 0.75s ease-in-out 0.5s, fade 0.75s ease-in-out 0.5s forwards;
+}
+
+.button:nth-child(4){
+    animation: sequentialFadeIn 0.75s ease-in-out 0.75s, fade 0.75s ease-in-out 0.75s forwards;
+}
+
+.button:nth-child(5){
+    animation: sequentialFadeIn 0.75s ease-in-out 1s, fade 0.75s ease-in-out 1s forwards;
+}
+
+.button:nth-child(6){
+    animation: sequentialFadeIn 0.75s ease-in-out 1.25s, fade 0.75s ease-in-out 1.25s forwards;
+}
+
+.button:nth-child(7){
+    animation: sequentialFadeIn 0.75s ease-in-out 1.5s, fade 0.75s ease-in-out 1.5s forwards;
+}
+
+.button:nth-child(8){
+    animation: sequentialFadeIn 0.75s ease-in-out 1.75, fade 0.75s ease-in-out 1.75s forwards;
+}
+
+.button:nth-child(9){
+    animation: sequentialFadeIn 0.75s ease-in-out 2s, fade 0.75s ease-in-out 2s forwards;
+}
+
+.button:nth-child(10){
+    animation: sequentialFadeIn 0.75s ease-in-out 2.25s, fade 0.75s ease-in-out 2.25s forwards;
+}
+
+.button:nth-child(11){
+    animation: sequentialFadeIn 0.75s ease-in-out 2.5s, fade 0.75s ease-in-out 2.5s forwards;
+}
+
+.button:nth-child(12){
+    animation: sequentialFadeIn 0.75s ease-in-out 2.75s, fade 0.75s ease-in-out 2.75s forwards;
+}
+
+.button:nth-child(13){
+    animation: sequentialFadeIn 0.75s ease-in-out 3s, fade 0.75s ease-in-out 3s forwards;
+}
+
+.button:nth-child(14){
+    animation: sequentialFadeIn 0.75s ease-in-out 3.25s, fade 0.75s ease-in-out 3.25s forwards;
+}
+
+.button:nth-child(15){
+    animation: sequentialFadeIn 0.75s ease-in-out 4s, fade 0.75s ease-in-out 4s forwards;
+}
+
+.button:nth-child(16){
+    animation: sequentialFadeIn 0.75s ease-in-out 4.25s, fade 0.75s ease-in-out 4.25s forwards;
+}
+
+.button:nth-child(17){
+    animation: sequentialFadeIn 0.75s ease-in-out 4.5s, fade 0.75s ease-in-out 4.5s forwards;
+}
+
+.button:nth-child(18){
+    animation: sequentialFadeIn 0.75s ease-in-out 4.75s, fade 0.75s ease-in-out 4.75s forwards;
+}
+
+.button:nth-child(19){
+    animation: sequentialFadeIn 0.75s ease-in-out 5s, fade 0.75s ease-in-out 5s forwards;
+}
+
+.button:nth-child(20){
+    animation: sequentialFadeIn 0.75s ease-in-out 5.25s, fade 5s ease-in-out 5.25s forwards;
 }
