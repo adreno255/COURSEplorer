@@ -109,6 +109,10 @@ body {
     font-family: Duplet-Light;
 }
 
+.left .info.short {
+    font-size: 4.5vh;
+}
+
 .left .info.regular {
     font-size: 4vh;
 }

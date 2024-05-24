@@ -194,7 +194,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('bs-customs-administration', 'Courses HTML/Public-Administration/bs-customs-administration');
                 loadPage('bs-foreign-service', 'Courses HTML/Public-Administration/bs-foreign-service');
                 loadPage('bs-international-studies', 'Courses HTML/Public-Administration/bs-international-studies');
-                loadPage('ba-public-administration', 'Courses HTML/Public-Administration/ba-public-administration');
+                loadPage('b-public-administration', 'Courses HTML/Public-Administration/b-public-administration');
                 loadPage('bs-public-safety', 'Courses HTML/Public-Administration/bs-public-safety');
                 loadPage('bs-social-work', 'Courses HTML/Public-Administration/bs-social-work');
             }            
