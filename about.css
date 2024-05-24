@@ -159,8 +159,8 @@ body{
 }
 
 .n img{
-    width: 70px;
-    height: 70px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     box-shadow: hsl(0, 0%, 51%, 0.7) 0 0 0px 2px;
     position: relative;
