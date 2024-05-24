@@ -1,0 +1,262 @@
+:root {
+    font-size: 20px;
+    font-family: Nunito;
+    --text-primary: black;
+    --text-secondary: #5d7b6f;
+    --text-tertiary: #a4c3a2;
+    --bg-primary: #eae7d6;
+}
+
+body {
+    background-color: var(--bg-primary);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.back-button{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    top: -10vh;
+    z-index: 10;
+}
+
+.back-button svg{
+    margin: 0;
+    fill: var(--text-secondary);
+    z-index: 3;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.back-button svg:hover{        
+    transform: scale(130%);
+}
+
+.back-button p{
+    margin: auto auto auto 1vw;
+    opacity: 0;
+    color: var(--text-secondary);
+    text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.5);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateX(-1vw);
+}
+
+.back-button svg:hover ~ p{    
+    opacity: 1;    
+    transform: translateX(0);
+}
+
+.titlepage {
+    position: relative;
+    top: -9vh;
+    text-align: center;
+    margin-bottom: -20vh;
+}
+
+.webname {
+    font-family: Fredoka;
+    font-size: 5rem;
+    color: var(--text-secondary);
+    text-shadow: 0 0 10px hsla(0, 0%, 0%, 0.3);
+}
+
+.container1 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    height: 85vh;
+    background-color: #e8d9bc;
+    margin-left: 10%;
+    border-radius: 5vh;
+    margin-bottom: 5vh;
+}
+
+.top {
+    text-align: center;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.top #text {
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 4.5vh;
+    margin-bottom: 0vh;
+}
+
+.top {
+    text-align: center;
+}
+
+.bottom {
+    font-family: Nunito;
+    font-size: 3.5vh;
+    margin-left: 2vh;
+    margin-right: 4vh;
+    margin-bottom: 3vh;
+    margin-top: 1vh;
+}
+
+.bottom.long{
+    font-size: 3vh;
+}
+
+.bottom.x-long{
+    font-size: 2.65vh;
+}
+
+/* TOGGLE BUTTON 1*/
+.left {
+    margin-top: 6vh;
+    background-color: var(--text-tertiary);
+    width: 43%;
+    margin-bottom: 6vh;
+    margin-left: -11vh;
+    border-radius: 5vh;
+    position: relative;
+}
+
+.next-container1{
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+}
+
+#toggle1 {
+    display: none;
+}
+
+.toggle-button1{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle1:checked ~ .toggle-button1 .next-container1{
+    bottom: 4%;
+    left: 4%;
+}
+
+#toggle1:checked ~ .toggle-button1 .next1{
+    visibility: hidden;
+}
+
+#toggle1:checked ~ .toggle-button1 .back1{
+    visibility: visible;
+}
+
+#toggle1:checked ~ .bottom #list1{
+    display: none;
+}
+
+#toggle1:checked ~ .bottom #list2{
+    display: block;
+}
+
+#list2{
+    display: none;
+}
+
+.next1{
+    width: 0.8vw;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.back1{
+    width: 0.8vw;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+}
+
+/* TOGGLE BUTTON 2*/
+.right {
+    margin-top: 6vh;
+    background-color: var(--text-tertiary);
+    width: 43%;
+    margin-bottom: 6vh;
+    margin-right: -11vh;
+    border-radius: 5vh;
+    position: relative;
+}
+
+.next-container2{
+    width: 1.9vw;
+    height: 1.9vw;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+}
+
+#toggle2 {
+    display: none;
+}
+
+.toggle-button2{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#toggle2:checked ~ .toggle-button2 .next-container2{
+    bottom: 4%;
+    left: 4%;
+}
+
+#toggle2:checked ~ .toggle-button2 .next2{
+    visibility: hidden;
+}
+
+#toggle2:checked ~ .toggle-button2 .back2{
+    visibility: visible;
+}
+
+#toggle2:checked ~ .bottom #list3{
+    display: none;
+}
+
+#toggle2:checked ~ .bottom #list4{
+    display: block;
+}
+
+#list4{
+    display: none;
+}
+
+.next2{
+    width: 0.8vw;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.back2{
+    width: 0.8vw;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    visibility: hidden;
+}

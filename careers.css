@@ -95,7 +95,7 @@ hr{
     font-family: Fredoka;
     font-size: 1rem;
     color: var(--bg-primary);
-    margin-bottom: 5%;
+    margin: auto auto 5% auto;
     letter-spacing: .2rem;
 }
 
@@ -106,12 +106,10 @@ hr{
     border-radius: 10rem;
 }
 
-.button svg{
-    fill: var(--bg-primary);
-    width: 70%;
-    height: 50%;
+.button img{
+    height: 55%;
     margin: auto;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
 }
 
 .button:hover{

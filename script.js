@@ -278,6 +278,27 @@ document.addEventListener("DOMContentLoaded", function() {
                 loadPage('back-button', 'Courses HTML/transportation');
             }
             
+            if(page == 'careers'){
+                loadPage('agriculture_careers', 'Careers HTML/agriculture_careers');
+                loadPage('architecture-and-design_careers', 'Careers HTML/architecture-and-design_careers');
+                loadPage('business_careers', 'Careers HTML/business_careers');
+                loadPage('education_careers', 'Careers HTML/education_careers');
+                loadPage('engineering_careers', 'Careers HTML/engineering_careers');
+                loadPage('formal-sciences_careers', 'Careers HTML/formal-sciences_careers');
+                loadPage('health-sciences_careers', 'Careers HTML/health-sciences_careers');
+                loadPage('humanities_careers', 'Careers HTML/humanities_careers');
+                loadPage('media-and-communication_careers', 'Careers HTML/media-and-communication_careers');
+                loadPage('natural-sciences_careers', 'Careers HTML/natural-sciences_careers');
+                loadPage('nutrition_careers', 'Careers HTML/nutrition_careers');
+                loadPage('public-administration_careers', 'Careers HTML/public-administration_careers');
+                loadPage('social-sciences_careers', 'Careers HTML/social-sciences_careers');
+                loadPage('transportation_careers', 'Careers HTML/transportation_careers');
+            }
+
+            if (page.startsWith('Careers HTML/')) {
+                loadPage('back-button', 'careers');
+            }
+
         }); 
     }
 
